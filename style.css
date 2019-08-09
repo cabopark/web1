@@ -15,7 +15,6 @@ h1 {
 #grid ol{
   border-right:1px solid gray;
   margin:0px;
-  margin-top: 15px;
   padding: 20px;
 }
 #grid{
@@ -33,8 +32,6 @@ h1 {
 #grid ol{
     border-right:none;
     border-bottom:1px solid gray;
-
-    padding:30px;
 }
 h1 {
   font-size:40px;
