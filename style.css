@@ -33,9 +33,13 @@ h1 {
     border-right:none;
     border-bottom:1px solid gray;
 }
+#article{
+  padding: 0px;
+  padding-top: 20px;
+}
 h1 {
   font-size:40px;
-  padding:30px;
+  padding:20px;
 }
 }
 /*미디어쿼리 끝*/
