@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 1200px;
+  margin:0 auto;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  font-size:2.5rem;
+  text-align: center;
+  margin:0;
+  padding:10px;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+nav{
+  margin: 8px;
+  font-size: 0.9rem;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li{
+  font-family: sans-serif;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+}
+li a:hover {
+  background-color: #111111;
+}
+article {
+  font-size: 1rem;
+  margin: 8px;
+  background-color: #f1f1f1;
+  height: auto; /* only for demonstration, should be removed */
+}
+.left {
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
+
+.right {
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+footer {
+  background-color: #777;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  clear: both;
+  margin: 8px;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+  header {
+    font-size:30px;
+    text-align: center;
+    margin:0;
+    padding:0px;
+  }
+  li, .left, .main, .right{
+    float: none;
+    width: 100%;
+  }
+  .main {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: none;
+    border-right: none;
+  }
