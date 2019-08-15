@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>기억 소환 페이지</title>
  <style>
 
@@ -11,36 +12,50 @@
       #check{
         font-weight: bold;
       }
-
+      .button {
+        background-color: powderblue;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 14px 2px;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
  </style>
 </head>
 <body>
-  <div class="vv">
 
-  </div>
+  <div class="vv">
 <h1>QUIZ.1</h1>
- <p>너희는 과거를 반성하지 못한 채 살아가고 있다<br>
-    지금이라도 늦지 않았다! 부끄러웠던 지난날을<br>
-    되짚어 보고 미래를 향해 나아가길 바란다..<br>
-    그전에 우리가 미처 잊고 지낸 자신들의 자아를<br>
+ <p>너희는 과거를 반성하지 못한 채 살아가고 있다
+    지금이라도 늦지 않았다! 부끄러웠던 지난날을
+    되짚어 보고 미래를 향해 나아가길 바란다..
+    그전에 우리가 미처 잊고 지낸 자신들의 자아를
     마주하고 싶다면 해당 퀴즈를 마추길 바란다.
  </p>
 
 
- <button onclick="myFucntion()">과거를 보고 싶니?</button>
- <p id="check">롸잇 나우!</p>
+
+ <button class="button" onclick="myFucntion()">START</button>
+ <!-- <p id="check">버튼 클릭!</p> -->
  <div id="img">
    <img src="haha.jpg">
    <div>
-   <button type="button" onclick="location.href='haha2.html'">next</button>
+   <button class="button" type="button" onclick="location.href='haha2.html'">next</button>
  </div>
- </div>
+
 
  <script type="text/javascript">
    function myFucntion() {
    var jjury = prompt("왕이 넘어지면 뭐가 될까?", "");
    if(jjury ==="킹콩") document.getElementById("img").style.display = "block";
-   else document.getElementById("check").innerHTML = "<h4>다시 해봐~</h4>";
+   else {
+     alert('응~ 아니야!');
+   }
 
   }
  </script>
