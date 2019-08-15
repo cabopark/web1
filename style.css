@@ -3,7 +3,9 @@
 
 }
 .vv{
-  text-align: center;
+
+  text-align: justify;
+  line-height: 1.5;
 }
 .button {
   background-color: powderblue;
