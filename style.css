@@ -1,140 +1,21 @@
-* {
-  box-sizing: border-box;
+#img {
+  display: none;
+
 }
-body {
-  width: 1200px;
-  margin:0 auto;
-  display: block;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.header {
-  color: red;
-  font-size:2.2rem;
+.vv{
   text-align: center;
-  margin:0;
-  padding:10px;
 }
-.header a {
+.button {
+  background-color: powderblue;
+  border: none;
   color: black;
-  text-decoration: none;
-}
-nav{
-  margin-bottom: 8px;
-  font-size: 0.9rem;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-
-nav ul li{
-  font-family: sans-serif;
-  float: left;
-}
-
-nav ul li a {
-  display: block;
-  color: white;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  padding: 12px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 14px 2px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 20px;
 }
-nav ul li a:hover {
-  background-color: #111111;
-}
-
-
-h3{
-  text-align: center;
-}
-.link1 ul, .link2 ul, .link3 ul {
-
-}
-.link1 ul li, .link2 ul li, .link3 ul li{
-  text-align: center;
-  list-style-type: square;
-
-}
-
-.link1 ul li a, .link2 ul li a, .link3 ul li a {
-  display: block;
-  text-decoration: none;
-  padding: 3px;
-}
-
-.link1 ul li a:hover, .link2 ul li a:hover, .link3 ul li a:hover {
-  color: white;
-  background-color: #111111;
-}
-
-.link1, .link2, .link3 {
-  border-top: 1px solid gray;
-  float: left;
-  width: 33.3%;
-  padding: 10px;
-}
-
-.left {
-  padding:10px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-
-.main {
-  /*border-left: 1px solid gray;
-  border-right: 1px solid gray;*/
-  background-color:#f1f1f1;
-  padding: 10px;
-  float:left;
-  width:80%; /* The width is 60%, by default */
-}
-/*오른쪽 메뉴 시작*/
-.right2, .right3 {
-  border-top: 1px solid gray;
-  padding:10px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-.right1 {
-  border-top: 0px;
-  padding:10px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-footer {
-  border-top: 1px solid gray;
-  padding: 15px;
-  text-align: center;
-  color: black;
-  clear: both;
-  margin: 8px;
-}
-
-/*미디어쿼리*/
-
-
-/* 테블릿pc 밑으로*/
-  @media (max-width: 700px) {
-  body { width: 100%; height: auto;}
-  .header {
-    font-size:1.2rem;
-    text-align: center;
-    margin:0;
-    padding:0px;
-  }
-  li, .left, .main, .right1, .right2, .right3, .link1, .link2, .link3{
-    float: none;
-    width: 100%;
-  }
-  .main {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    border-left: none;
-    border-right: none;
-  }
-  .link1, .link2, .link3{
-    border-top: 1px solid gray;
-  }
