@@ -3,8 +3,7 @@
 
 }
 .vv{
-
-  text-align: justify;
+  text-align: center;
   line-height: 1.5;
 }
 .button {
@@ -20,4 +19,11 @@
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   border-radius: 20px;
+}
+
+p {
+  text-align: justify;
+}
+.skull{
+  margin-top: 25px;
 }
